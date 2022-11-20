@@ -2,7 +2,7 @@ body {
     font-family: 'Neucha';
     background-image: url(../images/bg.png);
 }
-#syte {
+.syte {
     position: relative;
     width: 1440px;
     height: 100%;
@@ -224,4 +224,38 @@ footer{
 
     margin-top: 37px;
     margin-right: 23px;
+}
+.katalog_content{
+    position: relative;
+    z-index: 4;
+    margin: auto;
+    width: 1038px;
+}
+.katalog{
+    margin-left: 223px;
+    width: 822px;
+    height: 100%;
+}
+.katalog_container{
+    background: rgb(136, 136, 136);
+    border-radius: 25px;
+    border: 5px solid #239CB3;
+    height: 297px;
+    width: 211px;
+    background-size: contain;
+}
+.filters {
+    border-radius: 25px;
+    border: 5px solid #239CB3;
+    float: left;
+    height: 351px;
+    width: 213px;
+}
+.katalog > div {
+    display:inline-block;
+    margin-right: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    height: 307px;
+    width: 221px;
 }
