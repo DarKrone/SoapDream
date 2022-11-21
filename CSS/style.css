@@ -4,7 +4,7 @@ body {
 }
 .syte {
     position: relative;
-    width: 1440px;
+    max-width: 1440px;
     height: 100%;
     background-color: #FFF9D6;
     margin: auto;
@@ -13,14 +13,14 @@ body {
 }
 nav {
     position: absolute;
-    margin-left: 526px;
+    margin-left: 500px;
+    min-width: 370px;
     margin-top: 142px;
     font-size: 0;
     z-index: 3;
 }
-ul {
-    min-width: 688px;
-    margin: auto;
+nav ul {
+    width: 100%;
     padding: 0;
 }
 nav li {
@@ -30,7 +30,7 @@ nav li {
     0 -0.6px 0.6px #000;
     margin-right: 29px;
     padding: 0;
-    display: inline;
+    display: inline-block;
     list-style-type: none;
     font-size: 40px;
 }
@@ -49,15 +49,16 @@ a {
     text-decoration: none;
     color: black;
 }
+
 #bubbles {
     position: absolute;
-    width: 1440px;
     z-index: 1;
 }
 #menu{
     position: relative;
-    width: 1440px;
-    height: 352px;
+    width: 100%;
+    overflow: hidden;
+    height: 452px;
     margin: auto;
     background-image: url("images/header2.png");
 }
@@ -77,20 +78,20 @@ a {
 .main_menu_content{
     position: relative;
     z-index: 4;
-    width: 1061px;
+    width: 100%;
     height: 100%;
     margin: auto;
-    margin-top: 100px;
 }
 .popular{
     position: relative;
     z-index: 4;
-    margin-left: 31px;
-    margin-right: 100px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 118px;
     background: rgb(136, 136, 136);
     border-radius: 25px;
     border: 5px solid #239CB3;
-    float: left;
     width: 214px;
     height: 508px;
 }
@@ -117,14 +118,13 @@ a {
     bottom: 185px;
 }
 .pages{
-    width: 1099px;
-    height: 621px;
+    margin: auto;
+    width: 1083px;
 }
-.pages .pages_container{
-    float:left;
-    margin-right: 48px;
+.pages > div:not(.popular){
+    display: inline-block;
+    margin-left: 50px;
     margin-bottom: 118px;
-    background: rgb(136, 136, 136);
     border-radius: 25px;
     border: 5px solid #239CB3;
     height: 190px;
@@ -184,22 +184,22 @@ a {
     position: relative;
     bottom: 285px;
 }
-.for_her .pages_container{
+.pages .for_her{
     background-image: url(../images/1.png);
 }
-.for_him .pages_container {
+.pages .for_him{
     background-image: url(../images/2.png);
 }
-.for_kids .pages_container {
+.pages .for_kids{
     background-image: url(../images/3.png);
 }
-.march_8 .pages_container {
+.pages .march_8{
     background-image: url(../images/5.png);
 }
-.new_year .pages_container{
+.pages .new_year{
     background-image: url(../images/4.png);
 }
-.berry .pages_container{
+.pages .berry{
     background-image: url(../images/6.png);
 }
 footer{
@@ -221,7 +221,6 @@ footer{
 .soap_for_you{
     position: relative;
     float: right;
-
     margin-top: 37px;
     margin-right: 23px;
 }
@@ -229,7 +228,7 @@ footer{
     position: relative;
     z-index: 4;
     margin: auto;
-    width: 1038px;
+    width: 1045px;
 }
 .katalog{
     margin-left: 223px;
@@ -258,4 +257,75 @@ footer{
     margin-bottom: 50px;
     height: 307px;
     width: 221px;
+}
+@media screen and (max-width: 1392px){
+    .pages{
+        width: 830px;
+    }
+    .popular{
+        margin-bottom: 200px;
+    }
+    #logo, .main_menu_a{
+        margin-top: 70px;
+        width: 239px;
+        height: 239px;
+    }
+    .main_menu_a div{
+        width: 200px;
+        height: 100px;
+        top: 120px;
+        left: 50px;
+    }
+    nav{
+        margin-left: 29%;
+    }
+    .katalog{
+        width: 547px;
+    }
+    .katalog_content{
+        width: 763px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .pages{
+        width: 650px;
+    }
+    nav{
+        width: 370px;
+        margin-left: 45%;
+    }
+    .pages > div:not(.popular){
+        margin-left: 62px;
+        margin-right: 60px;
+    }
+    .popular {
+        margin-bottom: 0px;
+    }
+    .katalog{
+        width: 271px;
+    }
+    .katalog_content{
+        width: 487px;
+    }
+}
+@media screen and (max-width: 660px){
+    .pages{
+        width: 320px;
+    }
+    .popular {
+        bottom: 80px;
+        margin-bottom: 118px;
+    }
+    nav{
+        margin-left: 50%;
+        margin-right: 50%;
+        right: -200px;
+        margin-top: 80px;
+    }
+    #logo{
+        display: none;
+    }
+    #header{
+        margin-top: 0;
+    }
 }
