@@ -319,13 +319,29 @@ footer{
     nav{
         margin-left: 50%;
         margin-right: 50%;
-        right: -200px;
-        margin-top: 80px;
+        right: -210px;
+        margin-top: 100px;
     }
     #logo{
         display: none;
     }
     #header{
-        margin-top: 0;
+        margin-top: 20px;
+    }
+    .filters{
+        margin: auto;
+        float: none;
+        margin-bottom: 50px;
+    }
+    .katalog{
+        width: 221px;
+        margin-left: 0px;
+        margin: auto;
+    }
+    .katalog > div{
+        margin-left: 0px;
+    }
+    .katalog_content{
+        width: 100%;
     }
 }
