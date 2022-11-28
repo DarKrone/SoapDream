@@ -1,5 +1,4 @@
 const filterBox = document.querySelectorAll('.box');
-console.log(filterBox);
 document.querySelector('.filters').addEventListener('click', event => {
     if (event.target.tagName !== 'LI') return false;
 
