@@ -7,7 +7,10 @@
     url('../Fonts/Neucha-Regular.svg#webfont') format('svg');
     font-weight: normal;
     font-style: normal;
-    }
+}
+p {
+	margin: 0;
+}
 body {
     font-family: 'Neucha';
     background-image: url(../images/bg.png);
@@ -61,6 +64,7 @@ a {
 }
 
 #bubbles {
+    width: 1440px;
     position: absolute;
     z-index: 1;
 }
@@ -115,7 +119,6 @@ a {
     margin-top: 0;
     bottom: 29px;
     z-index: 4;
-
 }
 .popular .pena {
     position: absolute;
@@ -233,40 +236,56 @@ footer{
     position: relative;
     z-index: 4;
     margin: auto;
-    width: 789px;
+    width: 1074px;
 }
 .katalog{
     margin-left: 223px;
-    width: 567px;
+    width: 852px;
     height: 100%;
 }
 .katalog_container{
     background: rgb(136, 136, 136);
     border-radius: 25px;
-    border: 5px solid #239CB3;
-    height: 297px;
-    width: 211px;
+    border: 5px solid #A95788;
     background-size: contain;
 }
 .filters {
-    border-radius: 25px;
-    border: 5px solid #239CB3;
     float: left;
-    height: 351px;
+    height: 100%;
     width: 213px;
+	text-align: center;
+	font-size: 32px;
+}
+.filters {
+    float: left;
+    height: 100%;
+    width: 213px;
+	text-align: center;
+	font-size: 32px;
+}
+.filters p:first-child{
+	margin-bottom: 44px;
+}
+#select_1 {
+width: 213px;
+height: 35px;
+border-radius: 5px;
+}
+button {
+	margin-top: 30px;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
 }
 .katalog > div {
     display:inline-block;
     margin-right: 0;
     margin-left: 50px;
     margin-bottom: 50px;
-    height: 307px;
+    height: 325px;
     width: 221px;
 }
-.filters li{
-    font-size: 50px;
-    cursor: pointer;
-}
+
 /* .red{
     border: 5px solid #ff0000;
 }
@@ -288,17 +307,36 @@ footer{
 .text_block{ 
     font-size: 18px;
     background: linear-gradient(to bottom,rgba(255, 255, 255, 0.01) 5%,rgba(255,255,255,1) 15%);
-    height: 131px;
+    height: 149px;
     width: 221px;
     margin-top: 176px;
     border-radius: 0 0 20px 20px;
 }
-.text_block p {
+.border {
+	background-color: #a1a1a1;
+	border-radius: 25px;
+	width: 170px;
+	height: 3px;
+	margin: auto;
+}
+.desc {
+	font-weight: bold;
     position: relative;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 25px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+.cost {
+	margin: 0;
+	margin-top: 5px;
+	font-size: 32px;
+	position: relative;
+    text-align: center;
 }
 @keyframes a1{
+	from {
+	}
     to{
         font-size: 0;
         width: 0px;
@@ -331,6 +369,14 @@ footer{
         margin-left: 29%;
     }
 }
+@media screen and (max-width: 1170px){
+	.katalog{
+		width: 567px;
+	}
+	.katalog_content{
+		width: 789px;
+	}
+}
 @media screen and (max-width: 1000px){
     .pages{
         width: 650px;
@@ -350,7 +396,7 @@ footer{
         width: 281px;
     }
     .katalog_content{
-        width: 487px;
+        width: 506px;
     }
 }
 @media screen and (max-width: 660px){
