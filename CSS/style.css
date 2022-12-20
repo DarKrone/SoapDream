@@ -349,6 +349,24 @@ button {
 	position: relative;
     text-align: center;
 }
+.contact_block{
+    margin: auto;
+    height: 400px;
+    width: 965px;
+    margin-bottom: 125px;
+}
+.contact_photo{
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    float: right;
+}
+.contact_info{
+    font-size: 32px;
+    margin-top: 40px;
+    float: left;
+    width: 376px;
+}
 @keyframes a1{
 	from {
 	}
@@ -412,6 +430,18 @@ button {
     }
     .katalog_content{
         width: 506px;
+    }
+    .contact_block{
+        width: 400px;
+        height: 712px;
+    }
+    .contact_photo{
+        float: none;
+    }
+    .contact_info{
+        margin-bottom: 50px;
+        text-align: center;
+        float: none;
     }
 }
 @media screen and (max-width: 660px){
